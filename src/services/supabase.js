@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { createClient } from "@supabase/supabase-js";
 const supabaseUrl = "https://jtrjlfjjesjhjzqqryvw.supabase.co";
 const supabaseKey = process.env.SUPABASE_KEY;
