@@ -5,7 +5,7 @@ import Row from "../ui/Row";
 import { getCabins } from "../services/apiCabins";
 
 function Cabins() {
-  useEffect(function (params) {
+  useEffect(function () {
     getCabins().then((data) => console.log(data));
   }, []);
   return (
