@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { useEffect } from "react";
 import Heading from "../ui/Heading";
 import Row from "../ui/Row";
@@ -11,6 +12,7 @@ function Cabins() {
     <Row type="horizontal">
       <Heading as="h1">All cabins</Heading>
       <p>TEST</p>
+      <img src="https://jtrjlfjjesjhjzqqryvw.supabase.co/storage/v1/object/public/cabin-images/cabin-001.jpg" />
     </Row>
   );
 }
