@@ -13,6 +13,12 @@ export async function getCabins() {
 }
 
 export async function createCabin(newCabin) {
+  const imageName = `${Math.random()} - ${newCabin.image.name}`.replaceAll(
+    "/",
+    ""
+  );
+  const imagePath = 
+  //1.Creat cabin
   const { data, error } = await supabase
     .from("cabins")
     .insert([newCabin])
@@ -22,6 +28,8 @@ export async function createCabin(newCabin) {
     console.error(error);
     throw new Error("Cabins could not be created");
   }
+
+  //2. Upload Image
   return data;
 }
 
