@@ -26,11 +26,11 @@ function CreateCabinForm() {
   });
 
   const { register, handleSubmit, reset, getValues, formState } = useForm();
-  const { errors } = formState;
-
+  
   function onSubmit(data) {
     mutate({ ...data, image: data.image[0] });
   }
+  const { errors } = formState;
 
   function onError(errors) {}
   return (

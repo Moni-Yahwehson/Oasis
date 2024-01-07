@@ -57,6 +57,7 @@ function CabinRow({ cabin }) {
     regularPrice,
     discount,
     image,
+    description
   } = cabin;
 
   const queryClient = useQueryClient();
