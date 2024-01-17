@@ -64,7 +64,7 @@ function Modal({ children }) {
 
   return (
     <ModalContext.Provider value={{ openName, close, open }}>
-      {children}  
+      {children}
     </ModalContext.Provider>
   );
 }
@@ -83,7 +83,7 @@ function Window({ children, name }) {
         <Button onClick={close}>
           <HiXMark />
         </Button>
-        <div>{children}</div>
+        <div>{cloneElement(children, { onCloseModal: close })}</div>
       </StyledModal>
     </Overlay>,
     document.body
